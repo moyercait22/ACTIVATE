@@ -1,6 +1,6 @@
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&family=Playfair+Display:ital@1&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
   --sand: #E9C2A2;
@@ -21,14 +21,6 @@
   --green-light: #F5EDE3;
   --green-dark: #8B6B4A;
   --green-text: #2C2420;
-  --clay-light: #E9C2A2;
-  --clay-text: #2C2420;
-  --sand-light: #F5EDE3;
-  --sand-text: #8B6B4A;
-  --stone-light: #EDE8E0;
-  --stone-text: #5C5245;
-  --moss-light: #E8EDE0;
-  --moss-text: #3D4A2A;
   --radius: 8px;
   --radius-lg: 12px;
   --shadow: 0 1px 4px rgba(80,50,30,0.10);
@@ -49,4 +41,5 @@ h1, h2, h3 {
 
 button { cursor: pointer; font-family: 'Jost', sans-serif; }
 input, select, textarea { font-family: 'Jost', sans-serif; }
+a { text-decoration: none; color: inherit; }
 a { text-decoration: none; color: inherit; }

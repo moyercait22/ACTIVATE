@@ -4,7 +4,7 @@ export default function Login() {
   async function signInWithGoogle() {
     await supabase.auth.signInWithOAuth({
       provider: 'google',
-      options: { redirectTo: window.location.origin }
+     options: { redirectTo: 'https://activate-fawn.vercel.app' }
     })
   }
 

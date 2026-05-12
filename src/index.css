@@ -1,0 +1,52 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&family=Playfair+Display:ital@1&display=swap');
+
+:root {
+  --sand: #E9C2A2;
+  --terra: #C4845A;
+  --bark: #8B6B4A;
+  --sage: #5C7A5C;
+  --linen: #D4B896;
+  --cream: #F5EDE3;
+  --deep: #2C2420;
+  --white: #FFFFFF;
+  --border: #DDD5C8;
+  --bg: #FFFFFF;
+  --bg2: #F5EDE3;
+  --text: #2C2420;
+  --text2: #8B6B4A;
+  --text3: #D4B896;
+  --green: #C4845A;
+  --green-light: #F5EDE3;
+  --green-dark: #8B6B4A;
+  --green-text: #2C2420;
+  --clay-light: #E9C2A2;
+  --clay-text: #2C2420;
+  --sand-light: #F5EDE3;
+  --sand-text: #8B6B4A;
+  --stone-light: #EDE8E0;
+  --stone-text: #5C5245;
+  --moss-light: #E8EDE0;
+  --moss-text: #3D4A2A;
+  --radius: 8px;
+  --radius-lg: 12px;
+  --shadow: 0 1px 4px rgba(80,50,30,0.10);
+}
+
+body {
+  font-family: 'Jost', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 300;
+  background: var(--cream);
+  color: var(--deep);
+  min-height: 100vh;
+}
+
+h1, h2, h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 400;
+}
+
+button { cursor: pointer; font-family: 'Jost', sans-serif; }
+input, select, textarea { font-family: 'Jost', sans-serif; }
+a { text-decoration: none; color: inherit; }

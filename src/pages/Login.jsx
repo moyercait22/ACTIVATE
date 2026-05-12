@@ -2,12 +2,19 @@ import { supabase } from '../lib/supabase'
 
 export default function Login() {
   async function signInWithGoogle() {
-    await supabase.auth.signInWithOAuth({
-      provider: 'google',
-     options: { redirectTo: 'https://activate-fawn.vercel.app' }
-    })
-  }
-
+  const { error } = await supabase.auth.signInWithOAuth({
+    provider: 'google',
+    options: {
+      redirectTo: 'https://activate-fawn.vercel.app',
+      skipBrowserRedirect: false,
+      queryParams: {
+        access_type: 'offline',
+        prompt: 'consent',
+      }
+    }
+  })
+  if (error) console.error('Login error:', error)
+}
   return (
     <div style={{
       display: 'flex', alignItems: 'center', justifyContent: 'center',
